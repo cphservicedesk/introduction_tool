@@ -1,0 +1,102 @@
+body{
+	text-align: center;
+	background-color: #f1f5f8;
+	font-family: 'Open Sans', sans-serif;
+}
+.content{
+	width: 900px;
+	display: inline-block;
+	text-align: left;
+}
+.art-container{
+	margin-top: calc(30vh - 80px);
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	position: relative;
+}
+#train{
+	position: absolute;
+	width: 12%;
+	top: 50%;
+	left: 0px;
+	transform: translate( 10%, -50%);
+}
+.track, .occupied{
+	width: 10%;
+	vertical-align: middle;
+	display: inline-table;
+	margin-right: -1px;
+}
+.occupied {
+	background-color: #f44336;
+	height: 5px;
+	display: inline-block;
+	margin-top: 5px;
+}
+.unoccupied {
+	background-color: #4CAF50;
+}
+.h_occu{
+	margin: 33px -20px;
+}
+.station {
+	margin: 15px 20px;
+	width: 20%;
+	vertical-align: middle;
+	display: inline-table;
+}
+#horizontal1{
+	top: 32px;
+	left: 204px;
+	position: absolute;
+	transform: rotate(45deg);
+}
+#horizontal2{
+	top: 32px;
+	right: 200px;
+	position: absolute;
+	transform: rotate(-45deg);
+}
+.section_3{
+	position: relative;
+	display: inline-block;
+}
+.section_1{
+	width: 100%;
+	height: 70px;
+	position: relative;
+	display: inline-block;
+}
+.section_2{
+	position: relative;
+}
+.p80{
+	position: absolute;
+	height: 100%;
+}
+#p80_1{
+	left: 190px;
+}
+#p80_2{
+	right: 190px;
+}
+.explanatory_text{
+	margin-top: 50px;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.drive{
+	animation: drive 10s forwards;
+	animation-iteration-count: infinite;
+}
+@keyframes drive {
+	0% {left: 0%; transform: translate( 10%, -50%);}
+	10% {left: 0%; transform: translate( 10%, -50%);}
+	40% {left: 50%; transform: translate( -50%, -50%);}
+	60% { left: 50%; transform: translate( -50%, -50%); }
+	90% {left: 100%; transform: translate( -110%, -50%);}
+	100% {left: 100%; transform: translate( -110%, -50%);}
+}
